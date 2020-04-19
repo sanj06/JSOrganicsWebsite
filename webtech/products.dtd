@@ -1,0 +1,11 @@
+
+
+
+<!ELEMENT products (category+)>
+<!ELEMENT category (product*)>
+<!ELEMENT product (price,description?,image+)>
+<!ATTLIST category name CDATA #REQUIRED>
+<!ATTLIST product name CDATA #REQUIRED>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT image (#PCDATA)>

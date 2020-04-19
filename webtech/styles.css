@@ -1,0 +1,25 @@
+#products_box{
+width:780px;
+text-align:center;
+margin-left:30px;
+margin-bottom:10px;
+
+}
+
+#single_product{float:left; margin:10px;}
+
+#content_area{
+	width:750px;
+	height:800px;
+	float:right;
+	
+	
+}
+
+#sidebar{
+	width:250px;
+	height:800px;
+	float:left;
+	background-color:white;
+	
+}

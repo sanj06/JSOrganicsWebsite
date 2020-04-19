@@ -1,0 +1,122 @@
+
+
+
+<web-app>
+<welcome-file-list>  
+   <welcome-file>homepage.jsp</welcome-file>  
+   
+  </welcome-file-list>  
+
+ <servlet>
+          <servlet-name>SignUpServlet</servlet-name>
+          <servlet-class>SignUpServlet</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>SignUpServlet</servlet-name> 
+         <url-pattern>/SignUpServlet</url-pattern> 
+    </servlet-mapping> 
+
+   <servlet>
+          <servlet-name>LoginServlet</servlet-name>
+          <servlet-class>LoginServlet</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>LoginServlet</servlet-name> 
+         <url-pattern>/LoginServlet</url-pattern> 
+    </servlet-mapping> 
+
+    <servlet>
+          <servlet-name>LogoutServlet</servlet-name>
+          <servlet-class>LogoutServlet</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>LogoutServlet</servlet-name> 
+         <url-pattern>/LogoutServlet</url-pattern> 
+    </servlet-mapping> 
+
+   <servlet>
+          <servlet-name>LoginValidateServlet</servlet-name>
+          <servlet-class>LoginValidateServlet</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>LoginValidateServlet</servlet-name> 
+         <url-pattern>/LoginValidateServlet</url-pattern> 
+    </servlet-mapping> 
+
+
+      <servlet>
+          <servlet-name>AddOfferServlet</servlet-name>
+          <servlet-class>AddOfferServlet</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>AddOfferServlet</servlet-name> 
+         <url-pattern>/AddOfferServlet</url-pattern> 
+    </servlet-mapping> 
+
+
+       <servlet>
+          <servlet-name>DeleteOfferServlet</servlet-name>
+          <servlet-class>DeleteOfferServlet</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>DeleteOfferServlet</servlet-name> 
+         <url-pattern>/DeleteOfferServlet</url-pattern> 
+    </servlet-mapping> 
+
+
+
+ <servlet>
+          <servlet-name>AddProductServlet</servlet-name>
+          <servlet-class>AddProductServlet</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>AddProductServlet</servlet-name> 
+         <url-pattern>/AddProductServlet</url-pattern> 
+    </servlet-mapping> 
+
+
+     <servlet>
+          <servlet-name>DeleteProductServlet</servlet-name>
+          <servlet-class>DeleteProductServlet</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>DeleteProductServlet</servlet-name> 
+         <url-pattern>/DeleteProductServlet</url-pattern> 
+    </servlet-mapping> 
+
+
+   
+     <servlet>
+          <servlet-name>CartServlet</servlet-name>
+          <servlet-class>CartServlet</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>CartServlet</servlet-name> 
+         <url-pattern>/CartServlet</url-pattern> 
+    </servlet-mapping> 
+
+
+
+    <servlet>
+          <servlet-name>RemoveFromCart</servlet-name>
+          <servlet-class>RemoveFromCart</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>RemoveFromCart</servlet-name> 
+         <url-pattern>/RemoveFromCart</url-pattern> 
+    </servlet-mapping> 
+
+
+ <servlet>
+          <servlet-name>User</servlet-name>
+          <servlet-class>User</servlet-class>
+ </servlet>
+ <servlet-mapping> 
+         <servlet-name>User</servlet-name> 
+         <url-pattern>/User</url-pattern> 
+    </servlet-mapping> 
+
+
+
+
+</web-app>

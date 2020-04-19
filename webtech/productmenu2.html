@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Organics</title>
+	<style type="text/css">
+		table,td{
+			
+			text-align: center;
+		}
+		a:link, a:visited {
+			  background-color: white;
+			  color: gray;
+			  padding: 15px 25px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+		}
+
+		 a:active {
+  			background-color: white;
+		}
+		a:hover{
+			color: white;
+			background-color: gray;
+		}
+
+		* {box-sizing:border-box}
+
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+		  display: none;
+		}
+
+				
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+		  color: #f2f2f2;
+		  font-size: 30px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+
+		
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<table cellpadding="10px" cellspacing="0" style="width:100%; border:5px solid black; height: ">
+		<tr style="height: 150px">
+			<td style="width:30%"> <a href="productsmenu.html"> <h4 style="font-family:courier; font-size: 30px" >Products </h4></a></td>
+			<td rowspan="2" style="width:40%"> <h1 style="font-family:courier; font-size: 100px">JS Organics </h1> </td>
+			<td style="width:30%"> <a href="kitsmenu.html"><h4 style="font-family:courier; font-size: 30px"> Kits </h4></a> </td>
+		</tr>
+		<tr style="height: 150px">
+			<td > 
+				<div class="search-container">
+    				<form action="">
+     					<input type="text" placeholder="Search.." name="search">
+      					<button type="submit"><i class="fa fa-search"></i></button>
+    				</form>
+  				</div>
+			</td>
+			<td colspan = "2" > <a href="#"><i class="fa fa-user"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i> </a></td>
+			
+		</tr>
+		<tr style="height: 400px">
+			<td colspan="2" > Face text</td>
+			<td > Face Image</td>
+			
+		</tr>
+		<tr style="height: 400px">
+			
+			<td > Body Image</td>
+			<td colspan="2" > Body Text</td>
+		</tr>
+		<tr style="height: 400px">
+			<td colspan="2" > Hand & Foot Text</td>
+			<td > Hand & Foot Image</td>
+			
+		</tr>
+		<tr style="height: 400px">
+			
+			<td > Lips Image</td>
+			<td colspan="2"> Lips Text</td>
+		</tr>
+		<tr style="height: 400px">
+			<td  colspan="2" > Hair Text</td>
+			<td > Hair Image</td>
+			
+		</tr>
+		
+		<tr style="height: 500px">
+
+
+			<td colspan="3" >
+				
+				<div class="slideshow-container">
+
+				  <!-- Full-width images with number and caption text -->
+				  <div class="mySlides fade">
+				    <img src="offer1.jpg" style="width:100%">
+				  </div>
+
+				  <div class="mySlides fade">
+				    <img src="offer2.jpg" style="width:100%">				    
+				  </div>
+
+								  
+			</td>
+		</tr>
+		<tr style="height: 250px">
+			<td colspan="3" >
+
+				<div class="w3-container w3-padding-large w3-grey">
+				    <h4 id="contact" style="font-family:courier; font-size: 20px" ><b>CONTACT US</b></h4>
+				    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+				      <div class="w3-third w3-dark-grey">
+				        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+				        <p>email@email.com</p>
+				      </div>
+				      <div class="w3-third w3-teal">
+				        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+				        <p>Chennai,Tamil Nadu, India</p>
+				      </div>
+				      	<div class="w3-third w3-dark-grey">
+					        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+					        <p>number</p>
+      				  	</div>
+    				</div>
+    
+ 				 </div>
+			</td>
+		</tr>
+
+	</table>
+</body>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 3000); 
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+</html>

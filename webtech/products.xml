@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <?xml-stylesheet type="text/xsl" href="products.xsl"?> -->
+
+<!DOCTYPE products SYSTEM "products.dtd">
+
+<products>
+	<category name="Himalayas">
+		<product name="Body Lotion">
+			<price>100</price>
+			<description>Can be used for oily and dry skin.</description>
+			<image>bodylotion.jpg</image>
+		</product>
+		<product name="Lip Balm">
+			<price>50</price>
+			<image>lipbalm.jpg</image>
+		</product>
+	</category>
+	<category name="Lakme">
+		<product name="Foundation">
+			<price>500</price>
+			<description>Matte on the skin!</description>
+			<image>foundation.jpg</image>
+		</product>
+		<product name="Lipstick">
+			<price>260</price>
+			<image>lipstick.jpg</image>
+		</product>
+	</category>
+</products>
+
+
+
